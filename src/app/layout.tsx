@@ -48,13 +48,11 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     locale: "pt_BR",
     type: "website",
-    images: [{ url: SITE.ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE.name} — Automação de divulgação de ofertas para afiliados`,
     description: SITE.description,
-    images: [SITE.ogImage],
   },
   alternates: {
     canonical: SITE.url,

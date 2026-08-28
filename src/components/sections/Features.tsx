@@ -1,25 +1,33 @@
+import { Radio, ShoppingBag, Zap, MessageSquareText, Globe, BarChart3 } from "lucide-react";
+
 const FEATURES = [
   {
+    icon: Radio,
     title: "Multi-canal",
     description: "WhatsApp, Telegram e mais num painel só, sem alternar entre apps.",
   },
   {
+    icon: ShoppingBag,
     title: "Multi-marketplace",
     description: "Mercado Livre, Amazon, Shopee e Magalu, cada um com seu link de afiliado certo.",
   },
   {
+    icon: Zap,
     title: "Automação completa",
     description: "Da oferta encontrada até o disparo, sem precisar tocar em nada no meio do caminho.",
   },
   {
+    icon: MessageSquareText,
     title: "Templates seus",
     description: "Monta a mensagem do seu jeito uma vez, o Aflyo repete em toda oferta nova.",
   },
   {
+    icon: Globe,
     title: "Vitrine pública",
     description: "Uma página com a sua cara pra reunir todas as ofertas ativas num link só.",
   },
   {
+    icon: BarChart3,
     title: "Painel de resultados",
     description: "Cliques, disparos e canais que mais convertem, tudo num lugar só.",
   },
@@ -44,7 +52,10 @@ export default function Features() {
               key={feature.title}
               className="rounded-2xl border border-line p-6 transition-colors hover:border-mint-200 hover:bg-ice/30"
             >
-              <h3 className="text-base font-bold tracking-tight">{feature.title}</h3>
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-ice text-mint-700">
+                <feature.icon size={19} strokeWidth={2} />
+              </div>
+              <h3 className="mt-4 text-base font-bold tracking-tight">{feature.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-secondary">
                 {feature.description}
               </p>

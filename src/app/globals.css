@@ -16,13 +16,13 @@
   --mint-800: #127046;
   --mint-900: #0a4d30;
   --ice: #dff8ee;
-  --champagne: #e8c97a;
+  --slate: #6b7280;
 
   --surface-0: #ffffff;
   --surface-1: #f6f7f9;
   --surface-2: #f1f3f6;
   --ink: #101418;
-  --ink-secondary: #62707c;
+  --ink-secondary: #6b7280;
   --ink-tertiary: #93a1ac;
   --line: rgba(16, 20, 24, 0.09);
   --line-strong: rgba(16, 20, 24, 0.16);
@@ -50,7 +50,7 @@
   --color-mint-900: var(--mint-900);
 
   --color-ice: var(--ice);
-  --color-champagne: var(--champagne);
+  --color-slate: var(--slate);
 
   --color-surface-0: var(--surface-0);
   --color-surface-1: var(--surface-1);
@@ -79,17 +79,5 @@ h1, h2, h3, h4 {
 
 ::selection {
   background: var(--mint-400);
-  color: var(--graphite);
-}
-
-.text-gradient-mint {
-  background: linear-gradient(135deg, var(--mint-500) 0%, var(--mint-700) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.btn-gradient {
-  background: linear-gradient(135deg, var(--mint-400) 0%, var(--mint-500) 100%);
   color: var(--graphite);
 }

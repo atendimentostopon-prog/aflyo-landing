@@ -83,7 +83,7 @@ export default function Pricing() {
                 <a
                   href={SITE.signupUrl}
                   className={`mt-6 rounded-xl px-4 py-3 text-center text-sm font-bold transition-transform hover:-translate-y-0.5 ${
-                    plan.highlight ? "btn-gradient shadow-lg shadow-mint-500/25" : "border border-line-strong text-ink"
+                    plan.highlight ? "bg-graphite text-white" : "border border-line-strong text-ink"
                   }`}
                 >
                   Começar grátis

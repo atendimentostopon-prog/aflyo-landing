@@ -5,8 +5,7 @@ export const SITE = {
   signupUrl: "https://app.aflyo.com.br/signup",
   loginUrl: "https://app.aflyo.com.br/login",
   description:
-    "Automação de divulgação de ofertas para afiliados de marketplace. Monitora promoções e dispara automaticamente em múltiplos canais — sem postar link por link.",
-  ogImage: "/og-image.png",
+    "Automação de divulgação de ofertas para afiliados de marketplace. Monitora promoções e dispara automaticamente em múltiplos canais, sem postar link por link.",
 } as const;
 
 export interface PlanFeature {

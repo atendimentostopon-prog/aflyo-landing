@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SITE } from "@/lib/constants";
 
 export default function Footer() {
@@ -6,13 +7,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm space-y-3">
-            <div className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M4 18L12 4L20 18" stroke="#3dd98f" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="12" cy="14.5" r="1.6" fill="#3dd98f" />
-              </svg>
-              {SITE.name}
-            </div>
+            <Image src="/brand/logo-primary.png" alt={SITE.name} width={110} height={37} className="h-6 w-auto" />
             <p className="text-sm leading-relaxed text-ink-secondary">
               Automação de divulgação de ofertas pra afiliado de marketplace que quer parar de postar link por link.
             </p>
