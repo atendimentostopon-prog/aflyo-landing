@@ -4,6 +4,8 @@ export const SITE = {
   appUrl: "https://app.aflyo.com.br",
   signupUrl: "https://app.aflyo.com.br/signup",
   loginUrl: "https://app.aflyo.com.br/login",
+  termsUrl: "https://app.aflyo.com.br/termos-de-uso",
+  privacyUrl: "https://app.aflyo.com.br/politica-de-privacidade",
   description:
     "Automação de divulgação de ofertas para afiliados de marketplace. Monitora promoções e dispara automaticamente em múltiplos canais, sem postar link por link.",
 } as const;

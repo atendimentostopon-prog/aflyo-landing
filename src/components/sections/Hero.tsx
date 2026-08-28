@@ -65,7 +65,7 @@ export default function Hero() {
 
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="rounded-xl bg-surface-1 p-3">
-              <p className="text-[10px] font-bold uppercase tracking-wider text-ink-tertiary">Disparado</p>
+              <p className="text-[10px] font-bold uppercase tracking-wider text-ink-tertiary">Enviados</p>
               <p className="mt-1 text-lg font-bold text-ink">12.458</p>
             </div>
             <div className="rounded-xl bg-surface-1 p-3">
@@ -75,7 +75,7 @@ export default function Hero() {
           </div>
 
           <div className="mt-3 rounded-xl bg-surface-1 p-3">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-ink-tertiary">Canais</p>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-ink-tertiary">Desempenho</p>
             <svg viewBox="0 0 240 48" className="mt-2 h-10 w-full" preserveAspectRatio="none">
               <polyline
                 points="0,38 30,30 60,34 90,18 120,24 150,10 180,16 210,6 240,12"
@@ -95,7 +95,7 @@ export default function Hero() {
             <span className="flex h-6 w-6 items-center justify-center rounded-full bg-surface-1 text-mint-700">
               <Send size={13} strokeWidth={2.2} />
             </span>
-            <span>Enviado pra 4 canais</span>
+            <span>Disparado pra 4 canais</span>
           </div>
         </div>
       </div>

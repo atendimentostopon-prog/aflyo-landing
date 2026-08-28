@@ -35,8 +35,8 @@ export default function Footer() {
         <div className="mt-10 flex flex-col gap-3 border-t border-line pt-6 text-xs text-ink-tertiary sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {SITE.name}. Todos os direitos reservados.</p>
           <div className="flex gap-5">
-            <a href="#" className="hover:text-ink-secondary">Termos de Uso</a>
-            <a href="#" className="hover:text-ink-secondary">Política de Privacidade</a>
+            <a href={SITE.termsUrl} className="hover:text-ink-secondary">Termos de Uso</a>
+            <a href={SITE.privacyUrl} className="hover:text-ink-secondary">Política de Privacidade</a>
           </div>
         </div>
       </div>
