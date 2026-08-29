@@ -10,6 +10,8 @@ export const SITE = {
     "Automação de divulgação de ofertas para afiliados de marketplace. Monitora promoções e dispara automaticamente em múltiplos canais, sem postar link por link.",
 } as const;
 
+export const GA_MEASUREMENT_ID = "G-VH74BLJZY4";
+
 export interface PlanFeature {
   label: string;
 }
