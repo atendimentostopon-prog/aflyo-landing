@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import { PLANS, SITE } from "@/lib/constants";
 
 function formatPrice(value: number) {
@@ -8,8 +5,6 @@ function formatPrice(value: number) {
 }
 
 export default function Pricing() {
-  const [cycle, setCycle] = useState<"monthly" | "yearly">("monthly");
-
   return (
     <section id="planos" className="border-t border-line bg-surface-1">
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
@@ -23,35 +18,9 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="mt-8 flex justify-center">
-          <div className="inline-flex rounded-full border border-line-strong bg-surface-0 p-1">
-            <button
-              type="button"
-              onClick={() => setCycle("monthly")}
-              className={`rounded-full px-4 py-2 text-sm font-bold transition-colors ${
-                cycle === "monthly" ? "bg-graphite text-white" : "text-ink-secondary"
-              }`}
-            >
-              Mensal
-            </button>
-            <button
-              type="button"
-              onClick={() => setCycle("yearly")}
-              className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold transition-colors ${
-                cycle === "yearly" ? "bg-graphite text-white" : "text-ink-secondary"
-              }`}
-            >
-              Anual
-              <span className="rounded-full bg-mint-100 px-2 py-0.5 text-[10px] font-bold text-mint-800">
-                -17%
-              </span>
-            </button>
-          </div>
-        </div>
-
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {PLANS.map((plan) => {
-            const price = cycle === "monthly" ? plan.monthlyPrice : plan.yearlyPrice;
+            const price = plan.monthlyPrice;
             return (
               <div
                 key={plan.id}
@@ -75,9 +44,7 @@ export default function Pricing() {
                   <span className="font-display text-4xl font-bold tracking-tight">
                     {formatPrice(price)}
                   </span>
-                  <span className="text-sm text-ink-tertiary">
-                    /{cycle === "monthly" ? "mês" : "ano"}
-                  </span>
+                  <span className="text-sm text-ink-tertiary">/mês</span>
                 </div>
 
                 <a

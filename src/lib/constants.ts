@@ -20,7 +20,6 @@ export interface Plan {
   id: "starter" | "profissional" | "business";
   name: string;
   monthlyPrice: number;
-  yearlyPrice: number;
   highlight: boolean;
   tagline: string;
   features: PlanFeature[];
@@ -31,7 +30,6 @@ export const PLANS: Plan[] = [
     id: "starter",
     name: "Starter",
     monthlyPrice: 47.9,
-    yearlyPrice: 479,
     highlight: false,
     tagline: "Pra começar a automatizar sem complicação.",
     features: [
@@ -48,7 +46,6 @@ export const PLANS: Plan[] = [
     id: "profissional",
     name: "Profissional",
     monthlyPrice: 97,
-    yearlyPrice: 970,
     highlight: true,
     tagline: "Pra quem já dispara todo dia e quer escalar.",
     features: [
@@ -65,7 +62,6 @@ export const PLANS: Plan[] = [
     id: "business",
     name: "Business",
     monthlyPrice: 197,
-    yearlyPrice: 1970,
     highlight: false,
     tagline: "Pra operação grande, com times e múltiplos canais.",
     features: [
